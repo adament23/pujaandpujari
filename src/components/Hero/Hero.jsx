@@ -4,6 +4,8 @@ import Image2 from "../../assets/hero/pujathali.png";
 import Image3 from "../../assets/hero/india-marriage-png.png";
 import Slider from "react-slick";
 
+
+
 const ImageList = [
   {
     id: 1,
@@ -28,7 +30,7 @@ const ImageList = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({handleOrderPopup}) => {
     var settings = {
         dots: false,
         arrows: false,
@@ -75,7 +77,7 @@ const Hero = () => {
                         data-aos-delay="300"
                       >
                         <button
-                        //   onClick={handleOrderPopup}
+                          onClick={handleOrderPopup}
                           className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                         >
                           Order Now
